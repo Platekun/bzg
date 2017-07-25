@@ -1,5 +1,5 @@
 {
-  "name": "bz",
+  "name": "bzg",
   "version": "0.0.0",
   "description": "Utility functions to help you build bizagi custom connectors",
   "keywords": ["bizagi studio", "custom connector"],
@@ -21,9 +21,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Platekun/bz/tree/master"
+    "url": "https://github.com/Platekun/bzg/tree/master"
   },
   "bugs": {
-    "url": "https://github.com/Platekun/bz/issues"
+    "url": "https://github.com/Platekun/bzg/issues"
   }
 }

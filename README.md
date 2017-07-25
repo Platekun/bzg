@@ -1,8 +1,8 @@
-# bz
+# bzg
 A set of functions to help you build Bizagi custom connectors easier.
 
 # Installation
-`npm install --save bz`
+`npm install --save bzg`
 
 # API
 `createResponse(res, err, statusCode)`: Creates a Bizagi formatted response. This is a special format used by Bizagi studio.
@@ -25,7 +25,7 @@ A set of functions to help you build Bizagi custom connectors easier.
 
 # Use
 ```
-import bz from 'bz';
+import bzg from 'bzg';
 import imgur from 'imgur';
 import consumer from './some-path/consumer';
 
@@ -39,5 +39,5 @@ export function _action(handlers, services, authdata, input) {
     // Remenber to return a Promise.
 }
 
-export const invoke = bz( [imgur, consumer], _action);
+export const invoke = bzg( [imgur, consumer], _action);
 ```
