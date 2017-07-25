@@ -1,0 +1,21 @@
+{
+  "name": "bz",
+  "version": "0.0.0",
+  "description": "Utility functions to help you build bizagi custom connectors",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "author": "Carlos Camilo Lobo Ulloque",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "dependencies": {
+    "expect": "^1.20.2",
+    "lodash": "^4.17.4"
+  }
+}
