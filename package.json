@@ -2,6 +2,7 @@
   "name": "bz",
   "version": "0.0.0",
   "description": "Utility functions to help you build bizagi custom connectors",
+  "keywords": ["bizagi studio", "custom connector"],
   "main": "./build/index.js",
   "scripts": {
     "build": "babel src --out-dir build",
@@ -17,5 +18,12 @@
   "dependencies": {
     "expect": "^1.20.2",
     "lodash": "^4.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Platekun/bz/tree/master"
+  },
+  "bugs": {
+    "url": "https://github.com/Platekun/bz/issues"
   }
 }
