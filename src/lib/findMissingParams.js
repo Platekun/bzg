@@ -3,7 +3,7 @@ import createError from './createError';
 import errorTypes from './errorTypes';
 
 export function _findMissingParams(makeIterable, createError, params) {
-    const doesntExist = x => _.isNull(x) || _.isUndefined(x) || !_.isEmpty(x);
+    const doesntExist = x => _.isNull(x) || _.isUndefined(x) || _.isEmpty(x);
     const missingParams = _.filter(makeIterable(params), param => doesntExist(param.value));
     return missingParams.length ? createError('VAL.REQUIRED_PARAM', { paramName: missingParams.pop().key }) : '';
 }
