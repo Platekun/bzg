@@ -15,8 +15,8 @@ export default function bz(services, fn) {
             globals.authdata,
             data.inputs.input
         ).then(res => {
-            log(res);
-            done(res);
+            log(JSON.stringify(res));
+            done(JSON.stringify(res));
         });
     };
 }
