@@ -30,7 +30,7 @@ export default function createResponse(res, err = '', statusCode = 'statusCode')
 		response: {
 			outputs: {
 				output: didRequestSucceed ? res : {},
-				error: didRequestSucceed ? {} : err
+				error: didRequestSucceed ? {} : res
 			}
 		},
 		success: didRequestSucceed,
