@@ -33,7 +33,7 @@ export default function createResponse(res, err = '', statusCode = 'statusCode')
 				error: didRequestSucceed ? {} : err
 			}
 		},
-		success,
+		success: didRequestSucceed,
 		connectorstatuscode: res[statusCode],
 		errormessage: didRequestSucceed ? '' : err,
 		autotestingenabled: isAutotestingEnable()
