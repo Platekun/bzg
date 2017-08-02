@@ -25,5 +25,5 @@ export function _makeIterable(params) {
  * @param {Object} params Bizagi user input
  */
 export default function findMissingParams(params) {
-    _findMissingParams(_makeIterable, createError, params);
+    return _findMissingParams(_makeIterable, createError, params);
 }
